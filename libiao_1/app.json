@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ce0000",
+    "navigationBarTitleText": "岳阳楼区专业音响",
+    "navigationBarTextStyle":"floralwhite"
+  },
+  "tabBar": {
+    "color": "#a9b7b7", 
+    "borderStyle": "black",
+    "selectedColor": "#e45c5c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tabber_001.png",
+        "selectedIconPath": "image/tabber_006.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "设置",
+        "iconPath": "image/tabber_002.png",
+        "selectedIconPath": "image/tabber_007.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "帮助",
+        "iconPath": "image/tabber_003.png",
+        "selectedIconPath": "image/tabber_008.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "帮助",
+        "iconPath": "image/tabber_004.png",
+        "selectedIconPath": "image/tabber_009.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "帮助",
+        "iconPath": "image/tabber_005.png",
+        "selectedIconPath": "image/tabber_0010.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+/**index.wxss**/
+.page_row{
+  display: flex;
+  flex-direction: row
+}
+
+.search{
+  width: 95%;
+}
+
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-top: 5px; 
+  background: #f0f0f0
+}
+
+.search_arr input{
+  /* input里面的文字距离放大镜图标的距离 */
+  margin-left: 30px; 
+  height: 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  
+}
+
+.searchcion {
+  margin: 13rpx 5rpx 5rpx 20rpx;
+  position: absolute;
+
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+}
+
+
+
+/* 轮播指示点未改变 */
+/* .lunbotu{
+  margin-top: 5px;
+  height: 240px
+} */
+
+
+/* 轮播指示点改变 */
+/*其实，正常情况下，没必要加.wrap,多余，但由于.dot要绝对定位到swiper上，而swiper中不能包裹其他的元素
+（除了swiper-item)，所以只好加个.wrap用来约束.dot  */
+.wrap{
+  height: auto;
+  position: relative;  
+  margin-top: 10rpx 
+}
+
+.wrap .swipers{
+  height: 560rpx;
+}
+
+.wrap image{
+  width: 100%;
+  height: 100%;
+}
+
+/*用来包裹所有的小圆点  */
+.dots{  
+  /* width: 500rpx; */
+  /* height: 10rpx;  */
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 310rpx;
+  bottom: 25rpx;
+}  
+/*未选中时的小圆点样式 */
+.dot{  
+  width: 24rpx;   
+  height: 7rpx;   
+  margin-right: 26rpx;
+  background-color: white;
+}  
+/*选中以后的小圆点样式  */
+.active{  
+  width: 26rpx;   
+  height: 7rpx;
+  background-color: black;
+}
+
+/* 系列选择图片链接 */
+ .xilie{
+  width: 100%;
+  height: 0; 
+  padding-bottom: 25%;
+  margin-top: 20rpx;
+   /* border: 1px #d0d0d0 solid;  */
+}
+
+.xilie image{
+  float: left;
+  height: 120rpx;
+  width: 120rpx;
+  padding: 0 0 0 52rpx; 
+} 
+
+.xilie_wenzi{
+  float: left;
+  font-size: 24rpx;
+  padding: 0 0 0 52rpx; 
+  width: 120rpx;
+  text-align: center;
+  margin-top: 10rpx;
+
+}
+
+.fengeBeijing{
+  width: 100%;
+  height: 10rpx;
+  background: #e0e0e0;
+  margin-top: 20rpx;
+}
+
+ .tuijianshangp{
+  width: 100%;
+  height: 1075rpx;
+} 
+
+.tuijianshangp_top{
+    width: 100%;
+    height: 84rpx;
+    /* background: #eeeeee;   */
+    margin-top: 20rpx;
+}
+
+.tuijianshangp_top_01{
+  font-size: 25rpx;
+  color:#f55556;
+  line-height: 90rpx;
+  margin-left: 15rpx;
+}
+
+.tuijianshangp_top_01 p{
+    color: #989898;
+    float: right;
+    margin-right: 30rpx;
+}
+
+.tuijianshangp_top_01 p span{
+    color: #989898;
+    font-size: 25rpx;
+}
+
+.tuijian_tupian{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.tuijian_tupian_01{
+ 
+  width: 50%;
+  height: 500rpx;
+  border: 1px #989898 solid;
+  border-left: none; 
+}
+
+.tuijian_tupian_02{
+ 
+  width: 50%;
+  height: 500rpx;
+  border: 1px #989898 solid;
+  border-right: none;
+  border-left: none;
+}
+
+.tuijian_tupianx{
+  display: flex;
+  width: 100%;
+  height: 0;
+}
+
+.tuijian_tupianx_01{
+  width: 50%;
+  height: 500rpx;
+  border: 1px #989898 solid;
+  border-left: none;
+  border-top: none;
+  border-bottom:none; 
+}
+
+.tuijian_tupianx_02{
+ 
+  width: 50%;
+  height: 500rpx;
+  border: 1px #989898 solid;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom:none;
+}
+
+/* 推荐商品下的图片 */
+.tuijianimg image{
+    width: 340rpx;
+    height: 350rpx;
+    margin-left: 20rpx;
+    margin-top: 18rpx;
+}
+
+.tuijianimgtext_01{
+  margin-left: 29rpx;
+  color: #666666;
+  font-size: 27rpx;
+}
+
+.tuijianimgtext_02{
+  
+  color: #fe5655;
+  margin-left: 29rpx;
+  font-size: 27rpx;
+  margin-top: 40rpx;
+}
+
+.tuijianimgtext_02 image{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: -10rpx;
+}
+
+.tuijianshangpinBottom{
+  
+}

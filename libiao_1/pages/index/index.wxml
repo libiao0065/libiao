@@ -1,0 +1,141 @@
+<!--index.wxml-->
+<view>
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='13' type='search'></icon>
+        <input class="" disabled placeholder="商品名称" value="{{searchValue}}"/>
+      </view>
+    </view>
+  </view>
+  <!-- 官网轮播图指示点形状未改变 -->
+  <!-- <swiper class='lunbotu' indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper> -->
+
+  <!-- 改变轮播图指示点形状
+       禁用掉swiper的indicator-dots属性（即删掉),然后用view组件模拟dots。
+       bindchange表示current 改变时会触发 change 事件
+   -->
+  <view class="wrap">
+      <swiper class="swipers" autoplay="{{autoplay}}" 
+      current="{{currentSwiper}}" 
+      bindchange="swiperChange">
+          <block wx:for="{{imgs}}">  
+              <swiper-item>  
+                  <image src="{{item.url}}"></image>  
+              </swiper-item>  
+          </block>  
+      </swiper>  
+    <!--重置小圆点的样式  -->
+      <view class="dots">  
+          <block wx:for="{{imgs}}">  
+              <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>  
+          </block>  
+      </view>  
+  </view>
+
+  <!-- 音响系列 -->
+  <view class='xilie' >
+      <view wx:for="{{imgr}}">
+          <view class='xilie_pailie'>
+              <image src="{{item.url}}"></image>
+          </view>
+      </view>
+      <view wx:for="{{textXilie}}">
+          <view class='xilie_wenzi'>
+              <view>{{item.textXi}}</view>
+          </view>
+      </view>
+  </view>
+
+  <view class='fengeBeijing'></view>
+
+  <!-- 推荐商品 -->
+  <view class='tuijianshangp'>
+      <view class='tuijianshangp_top'>
+          <view class='tuijianshangp_top_01'>
+              推荐商品
+              <p>
+                  更多<span>＋</span>
+              </p>
+          </view>
+      </view>
+
+      <view class='tuijian_tupian'>
+          <!-- 上左图 -->
+          <view class='tuijian_tupian_01'>
+              <view class='tuijianimg'>
+                  <image src='../../image/tuijian_001.gif'></image>
+              </view>
+              <view class='tuijianimgtext_01'>
+                  主持人
+              </view>
+              <view class='tuijianimgtext_02'>
+                  ￥0
+                  <image src='../../image/tuijian_005.gif'></image>
+              </view>
+          </view>
+          <!-- 上右图 -->
+          <view class='tuijian_tupian_02'>
+              <view class='tuijianimg'>
+                  <image src='../../image/tuijian_002.gif'></image>
+              </view>
+              <view class='tuijianimgtext_01'>
+                  NST12
+              </view>
+              <view class='tuijianimgtext_02'>
+                  ￥0
+                  <image src='../../image/tuijian_005.gif'></image>
+              </view>
+          </view>
+      </view>
+      <view class='tuijian_tupianx'>
+          <!-- 下左图 -->
+          <view class='tuijian_tupianx_01'>
+              <view class='tuijianimg'>
+                  <image src='../../image/tuijian_003.gif'></image>
+              </view>
+              <view class='tuijianimgtext_01'>
+                  NS12
+              </view>
+              <view class='tuijianimgtext_02'>
+                  ￥0
+                  <image src='../../image/tuijian_005.gif'></image>
+              </view>
+          </view>
+          <!-- 下右图 -->
+          <view class='tuijian_tupianx_02'>
+              <view class='tuijianimg'>
+                  <image src='../../image/tuijian_004.gif'></image>
+              </view>
+              <view class='tuijianimgtext_01'>
+                  KS4
+              </view>
+              <view class='tuijianimgtext_02'>
+                  ￥0
+                  <image src='../../image/tuijian_005.gif'></image>
+              </view>
+          </view>
+      </view>
+  </view>
+
+  <view class='fengeBeijing'></view>
+
+  <!-- BOB系列 -->
+  <view class='BOBxilie'>
+      <view class='tuijianshangp_top'>
+          <view class='tuijianshangp_top_01'>
+              推荐商品
+              <p>
+                  更多<span>＋</span>
+              </p>
+          </view>
+      </view>
+  </view>
+</view>
